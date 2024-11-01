@@ -412,6 +412,10 @@ open class InteractivePresentationController: PresentationController, UIGestureR
     }
 
     // MARK: - UIGestureRecognizerDelegate
+    
+    open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
+    }
 
     open func gestureRecognizer(
         _ gestureRecognizer: UIGestureRecognizer,
